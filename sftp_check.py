@@ -31,5 +31,6 @@ def check_sftp(host, usern, passwd, sftp_file_name):
 
 if __name__ == "__main__":
     print("start logging")
+    print("testbranch")
     check_sftp("sftp7-qa.com", "",
                "", "21-04testeu-west4.log")
