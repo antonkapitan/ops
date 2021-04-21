@@ -11,7 +11,6 @@ from datetime import datetime
 # Break manualy
 # all args should be strings (host, usern, passwd, sftp_file_name)
 
-
 def check_sftp(host, usern, passwd, sftp_file_name):
     with open(sftp_file_name, "a") as sftp_file:
         while True:
@@ -31,5 +30,6 @@ def check_sftp(host, usern, passwd, sftp_file_name):
 
 
 if __name__ == "__main__":
+    print("start logging")
     check_sftp("sftp7-qa.com", "",
                "", "21-04testeu-west4.log")
