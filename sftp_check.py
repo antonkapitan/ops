@@ -29,6 +29,8 @@ def check_sftp(host, usern, passwd, sftp_file_name):
                                 "  Connection reset error \"paramiko.SSHException\" " + "\n")
 
 
+print("master commit")
+
 if __name__ == "__main__":
     print("start logging")
     check_sftp("sftp7-qa.com", "",
