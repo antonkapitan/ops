@@ -16,14 +16,15 @@ function mk(){
         DAY="0$RANDOM_DAY"
     fi
     local DATETIME=$(date '+%H:%M:%S')
+	
+    local YEAR=2020
 
-    local YEAR=2021
-
-    mkdir $YEAR-$MON-$DAY_$DATETIME
-    touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY_$DATETIME
+    mkdir $YEAR-$MON-$DAY\_$DATETIME
+    touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY\_$DATETIME
 }
 
 for run in {1..10}
 do
     mk
+ # shuf -i 1-31 -n 1
 done
