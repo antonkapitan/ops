@@ -21,10 +21,11 @@ function mk(){
 
     mkdir $YEAR-$MON-$DAY\_$DATETIME
     touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY\_$DATETIME
+    touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY\_$DATETIME/$YEAR-$MON-$DAY\_$DATETIME.txt
 }
 
 for run in {1..10}
 do
     mk
- # shuf -i 1-31 -n 1
+    # shuf -i 1-31 -n 1
 done
