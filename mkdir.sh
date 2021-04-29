@@ -20,8 +20,8 @@ function mk(){
     local YEAR=2020
 
     mkdir $YEAR-$MON-$DAY\_$DATETIME
-    touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY\_$DATETIME
     touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY\_$DATETIME/$YEAR-$MON-$DAY\_$DATETIME.txt
+    touch -mad "$YEAR-$MON-$DAY $DATETIME" $YEAR-$MON-$DAY\_$DATETIME
 }
 
 for run in {1..10}
