@@ -2,3 +2,4 @@
 vlans/*.conf
 vlans/*.csv
 vlans/*.json
+os.py
